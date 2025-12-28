@@ -57,12 +57,10 @@
 
 <p>Функционал согласно ТЗ протестирован через <b>Postman</b>:</p>
 <p>1. После создания админа и запуска сервера (описание ниже), вход для админа - <code>POST {{baseUrl}}/api/login</code>, далее <code>Content-Type: application/json</code></p>
-<code>
-{
+<code>{
   "email": "admin@test.com",
   "password": "admin123"
-}
-</code>
+}</code>
 <p>2. Регистрация пользователя - <code>POST {{baseUrl}}/api/register</code>, далее <code>Content-Type: application/json</code></p>
 <code>
 {
@@ -107,5 +105,6 @@ npx prisma migrate dev --name init  # инициализация БД
 npx ts-node scripts/createAdmin.ts  # создание админа
 npm run dev                         # запуск сервера
 ```
+
 
 
