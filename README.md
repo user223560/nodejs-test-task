@@ -80,7 +80,7 @@
 <p>4. Получение всех пользователей (только для админа) - <code>GET {{baseUrl}}/api/users</code>, далее <code>Authorization: Bearer {{adminToken}}</code></p>
 <p>5. Получение своего профиля админом - <code>GET {{baseUrl}}/api/users/1</code>, далее <code>Authorization: Bearer {{adminToken}}</code></p>
 <p>6. Получение своего профиля пользователем - <code>GET {{baseUrl}}/api/users/2</code>, далее <code>Authorization: Bearer {{userToken}}</code></p>
-<p>7. Админ блокирует пользователя - <code>PUT {{baseUrl}}/api/users/2</code>, далее <code>Authorization: Bearer {{{{adminToken}}}}</code>, далее <code>Content-Type: application/json</code></p>
+<p>7. Админ блокирует пользователя - <code>PUT {{baseUrl}}/api/users/2</code>, далее <code>Authorization: Bearer {{adminToken}}</code>, далее <code>Content-Type: application/json</code></p>
 <code>{
   "isActive": false
 }</code>
@@ -102,6 +102,7 @@ npx prisma migrate dev --name init  # инициализация БД
 npx ts-node scripts/createAdmin.ts  # создание админа
 npm run dev                         # запуск сервера
 ```
+
 
 
 
